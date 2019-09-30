@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css" rel="stylesheet">
+        <title>SLPVH Voting</title>
+    </head>
+    <body>
+       <div class="row super-wrapper">
+           <main role="main" class="container-fluid">
+                <div class="header_infobox">
+                  <img src="/img/slpvh.png">
+                  <h2>SLPVH Voting</h2>
+                  <p>vote on the projects made for slpvh</p>
+                  <p class="normal">Please keep in mind the Judging Criteria laid out in <a href="https://github.com/SLPVH/hackathon-rules/blob/master/rules.md">hackathon-rules</a> repository when voting.</p>
+                </div>
+
+                <div class="rounded_row">
+                  <div id="projects-table-container" class="table-container loading">
+                    <h3>Projects</h3>
+
+                      <div class="table-responsive">
+                        <table id="projects-table">
+                          <thead>
+                            <tr>
+                              <th><div class="flex-hcenter amount">Votes</div></th>
+                              <th><div class="flex-hcenter">Team</div></th>
+                              <th><div class="flex-hcenter">Repository</div></th>
+                              <th><div class="flex-hcenter">Address</div></th>
+                            </tr>
+                          </thead>
+						  <tbody></tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+           </main>
+       </div>
+
+       <footer class="display-none">
+          <div class="row">
+            <div class="col">
+              <h4>Source Code</h4>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="http://github.com/blockparty-sh/slp-explorer">SLP Explorer</a></li>
+                <li><a class="text-muted" href="https://github.com/simpleledger/SLPDB">SLPDB</a></li>
+                <li><a class="text-muted" href="https://github.com/fountainhead-cash/slpserve">slpserve</a></li>
+                <li><a class="text-muted" href="https://github.com/fountainhead-cash/slpsockserve">slpsockserve</a></li>
+                <li><a class="text-muted" href="https://github.com/fountainhead-cash/slpqueryd">slpqueryd</a></li>
+                <li><a class="text-muted" href="https://github.com/simpleledger/slpjs">slpjs</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Resources</h4>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://simpleledger.cash">simpleledger.cash</a></li>
+                <li><a class="text-muted" href="https://github.com/simpleledger/slp-specifications">specification</a></li>
+                <li><a class="text-muted" href="https://developer.bitcoin.com/slp/">slp-sdk</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Connect</h4>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://web.telegram.org/#/im?p=@simpleledger">SimpleLedger Chat</a></li>
+                <li><a class="text-muted" href="https://www.youtube.com/channel/UC_WJO3lyHAhdU6oEk0lhMLw">SimpleLedger Youtube</a></li>
+                <li><a class="text-muted" href="https://twitter.com/SimpleLedger">SimpleLedger Twitter</a></li>
+                <li><a class="text-muted" href="http://t.me/fountainheadcash">Fountainhead Chat</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/ejs@2.6.1/ejs.min.js" integrity="sha384-z3/zFy+c0Ezm1HTD9hDDxLXmILFgOKgb5hXyOwcLkBDvRBuZdgneoKLSichkgQQj" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/slpjs@0.15.13/dist/slpjs.min.js" integrity="sha384-oEi1taPhWTJlwlDV+dqD25z9vh4PrHv3o/fDAvOeg/U7CEXoH5J8rSo38eHHlfb6" crossorigin="anonymous"></script>
+		<script src="config.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/buffer.min.js"></script>
+    </body>
+</html>
